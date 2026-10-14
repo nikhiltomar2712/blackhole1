@@ -1,71 +1,82 @@
+# Singularity — Schwarzschild Black Hole Visualizer
 
-Singularity — Schwarzschild Black Hole Visualizer
-A real-time, browser-based WebGL renderer that simulates the visual appearance of a Schwarzschild black hole using null-geodesic ray tracing. The camera is positioned at a 30° tilt, allowing you to explore the photon ring, shadow, and innermost stable circular orbit (ISCO) from a dynamic perspective.
+A real-time, browser-based WebGL renderer that simulates the visual appearance of a **Schwarzschild black hole** using null-geodesic ray tracing. The camera is positioned at a **30° tilt**, allowing you to explore the photon ring, shadow, and innermost stable circular orbit (ISCO) from a dynamic perspective.
 
-🔗 Live Site: https://nikhiltomar2712.github.io/blackhole1/
+🔗 **Live Site:** [https://nikhiltomar2712.github.io/blackhole1/](https://nikhiltomar2712.github.io/blackhole1/)
 
-✨ Features
-Real-time null-geodesic rendering of a Schwarzschild (non-rotating) black hole
+---
 
-Interactive camera controls
+## ✨ Features
 
-🖱️ Drag — Orbit around the black hole
+- **Real-time null-geodesic rendering** of a Schwarzschild (non-rotating) black hole
+- **Interactive camera controls**
+  - 🖱️ **Drag** — Orbit around the black hole
+  - 🔍 **Scroll / Pinch** — Move closer or further away
+- **Live telemetry HUD** displaying:
+  - Observer distance (`R.OBS`)
+  - Inclination (`INCL`) and Azimuth (`AZIM`)
+  - **Photon Ring** radius (1.50 rs)
+  - **Shadow** diameter (5.20 rs)
+  - **ISCO** radius (3.00 rs)
+  - FPS counter and mission-elapsed time
+- **30° camera tilt** for a cinematic, off-axis view of the accretion geometry
+- **GPU-accelerated** — requires WebGL support
 
-🔍 Scroll / Pinch — Move closer or further away
+---
 
-Live telemetry HUD displaying:
+## 🚀 Usage
 
-Observer distance (R.OBS)
+1. Open the [live site](https://nikhiltomar2712.github.io/blackhole1/) in a modern browser (Chrome, Firefox, Edge, Safari).
+2. **Drag** anywhere on the canvas to orbit the black hole.
+3. **Scroll** (desktop) or **pinch** (mobile) to change your distance from the event horizon.
+4. Watch the HUD update in real time as you move through spacetime.
 
-Inclination (INCL) and Azimuth (AZIM)
+> ⚠️ **Note:** A GPU with WebGL acceleration is required. If you see *"WebGL unavailable"*, enable hardware acceleration in your browser settings.
 
-Photon Ring radius (1.50 rs)
+---
 
-Shadow diameter (5.20 rs)
+## 🧠 Physics Background
 
-ISCO radius (3.00 rs)
+This visualization is based on the **Schwarzschild metric**, which describes the spacetime geometry around a non-rotating, uncharged black hole. The renderer traces **null geodesics** — the paths that light rays follow — backward from the observer's camera to determine what photons reach the eye.
 
-FPS counter and mission-elapsed time
+Key reference radii (in units of the Schwarzschild radius `rs = 2GM/c²`):
 
-30° camera tilt for a cinematic, off-axis view of the accretion geometry
+| Feature         | Value     |
+|-----------------|-----------|
+| Photon Ring     | 1.50 rs   |
+| Shadow Diameter | 5.20 rs   |
+| ISCO            | 3.00 rs   |
 
-GPU-accelerated — requires WebGL support
-
-🚀 Usage
-Open the live site in a modern browser (Chrome, Firefox, Edge, Safari).
-
-Drag anywhere on the canvas to orbit the black hole.
-
-Scroll (desktop) or pinch (mobile) to change your distance from the event horizon.
-
-Watch the HUD update in real time as you move through spacetime.
-
-⚠️ Note: A GPU with WebGL acceleration is required. If you see "WebGL unavailable", enable hardware acceleration in your browser settings.
-
-🧠 Physics Background
-This visualization is based on the Schwarzschild metric, which describes the spacetime geometry around a non-rotating, uncharged black hole. The renderer traces null geodesics — the paths that light rays follow — backward from the observer's camera to determine what photons reach the eye.
-
-Key reference radii (in units of the Schwarzschild radius rs = 2GM/c²):
-
-Feature	Value
-Photon Ring	1.50 rs
-Shadow Diameter	5.20 rs
-ISCO	3.00 rs
 These match the theoretical predictions for a Schwarzschild black hole.
 
-🛠️ Tech Stack
-WebGL / GLSL — GPU shaders for geodesic integration
+---
 
-JavaScript — camera controls, HUD, and rendering loop
+## 🛠️ Tech Stack
 
-HTML / CSS — minimal UI overlay
+- **WebGL / GLSL** — GPU shaders for geodesic integration
+- **JavaScript** — camera controls, HUD, and rendering loop
+- **HTML / CSS** — minimal UI overlay
 
-📄 License
-This project is released under the MIT License. See the LICENSE file for details.
+---
 
-🙏 Acknowledgements
-Inspired by the visual legacy of Interstellar (2014), the Event Horizon Telescope collaboration, and the broader open-source physics-visualization community.
+## 📄 License
 
-📬 Contact
-Created by Nikhil Tomar
-GitHub: @nikhiltomar2712
+This project is released under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgements
+
+Inspired by the visual legacy of *Interstellar* (2014), the Event Horizon Telescope collaboration, and the broader open-source physics-visualization community.
+
+---
+
+## 📬 Contact
+
+Created by **Nikhil Tomar**
+GitHub: [@nikhiltomar2712](https://github.com/nikhiltomar2712)
+
+---
+
+**For Twitter/X:**
+> 🕳️ Built a real-time WebGL black hole visualizer! It ray-traces null geodesics around a Schwarzschild black hole — drag to orbit, scroll to approach. Watch the photon ring (1.5 rs) and shadow (5.2 rs) emerge from the math. Try it: https://nikhiltomar2712.github.io/blackhole1/
