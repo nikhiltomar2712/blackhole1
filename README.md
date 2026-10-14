@@ -77,6 +77,3 @@ Created by **Nikhil Tomar**
 GitHub: [@nikhiltomar2712](https://github.com/nikhiltomar2712)
 
 ---
-
-**For Twitter/X:**
-> 🕳️ Built a real-time WebGL black hole visualizer! It ray-traces null geodesics around a Schwarzschild black hole — drag to orbit, scroll to approach. Watch the photon ring (1.5 rs) and shadow (5.2 rs) emerge from the math. Try it: https://nikhiltomar2712.github.io/blackhole1/
